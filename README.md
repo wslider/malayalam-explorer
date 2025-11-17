@@ -115,8 +115,8 @@ Educational app for Malayali diaspora and Travelers seeking to explore Kerala's 
         - Add shuffle() function, button toggle, and state to randomize deck order.
         - npm start and test `http://localhost/3005`
     9. Add additional flashcard data to flashcards.json - total count of 320. 
-    10. Polish CSS and Fine Tune Media Queries.   
-    11. ... add additional stretch goals (commit each new feature). 
+    10. First CSS polish after testing API and flashcard features  
+    11+. ... refine css more, add additional stretch goals (commit each new feature). 
 
 
 ## Future Plans and Upcoming Versions:
