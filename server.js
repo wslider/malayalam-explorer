@@ -8,7 +8,7 @@ import path, { join } from "path";
 
 
 const app = express();
-const port = 3002;
+const port = 3005;
 const DATA_PATH = path.join(process.cwd(),'data', 'flashcards.json'); 
 
 //middleware 

@@ -108,13 +108,9 @@ Educational app for Malayali diaspora and Travelers seeking to explore Kerala's 
     4. Structure and styling for MVP pages - index.html and flashcards.html
     5. Created script.js variables, functions and event listeners for index.html features - world clock: Local Time & IST with bilingual greetings.
     6. Set up flashcard data in JSON - initial 10 - 50 cards for testing API and flashcard functionality. 
-    7. 
-    
-    7. Implement custom API endpoints - server.js 
-        - Add Express routes for GET/POST /api/flashcards with fs module for JSON persistence.
-        - Build flashcard display component
-        - Add script.js logic to fetch/render cards via API, with flip animation and error fallback.
-        - npm run dev 
+    7.Add custom CRD API endpoint and Express routes for GET, POST, and DELETE. - server.js
+        - npm run dev & test
+         
     7. Add flashcard navigation controls - flashcards.js 
         - Implement Next/Previous/Skip buttons and “click” to Flip with event listeners and array indexing.
         - Integrate shuffle mode for flashcards
