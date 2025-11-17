@@ -105,16 +105,19 @@ Educational app for Malayali diaspora and Travelers seeking to explore Kerala's 
             }
         - npm install cors
         - npm install body parser
-    4. index.html & flashcards.html
+    4. index.html & flashcards.html 
         - basic structure for features
+    5. style.css - css for index.html & flashcards.css - css for flashcards.html 
+        - initial structure and styling for MVP pages
     5. Set up flashcard data in JSON - initial 10 - 50 cards for testing
         - Add flashcards.json with initial Malayalam-English array/objects; include client-side load script.
-    6. Implement custom API endpoints
+    6. script JS and flashcards.js
+    6. Implement custom API endpoints - server.js and script.js
         - Add Express routes for GET/POST /api/flashcards with fs module for JSON persistence.
         - Build flashcard display component
         - Add script.js logic to fetch/render cards via API, with flip animation and error fallback.
         - npm run dev 
-    7. Add flashcard navigation controls
+    7. Add flashcard navigation controls - flashcards.js 
         - Implement Next/Previous/Skip buttons and “click” to Flip with event listeners and array indexing.
         - Integrate shuffle mode for flashcards
         - Add shuffle() function, button toggle, and state to randomize deck order.

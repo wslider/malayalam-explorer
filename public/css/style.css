@@ -1,0 +1,168 @@
+     :root {
+      --keralaGreen: #004700; 
+      --keralaNight: #000d08;
+      --keralaShade: #001d08;
+      --munnarTeaGarden: #00b100;
+      --ripeMango: #ff6600; 
+      --mountainFog: #f0fff8; 
+      --monsoonCloud: #333849;
+      --backwaterBlue: #032094;
+    }
+
+    body {
+        background-color: var(--keralaGreen);
+        color: var(--mountainFog); 
+        font-family: Arial, Helvetica, sans-serif; 
+        display: flex; 
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 0; 
+    }
+
+    /* 
+    - if more than one link, make into dropdown menu 
+    - highlight on mouseover 
+    */
+    .topNav {
+    height:fit-content; 
+    width: 100vw;
+    box-sizing: border-box;
+    background-color: var(--keralaNight);
+    display: flex; 
+    justify-content: center;
+    padding: 20px; 
+    }
+
+        .topNav > a {
+        color: var(--mountainFog); 
+        font-size: 2rem;
+        font-weight: 500;
+        text-align: center;
+        }
+
+    .header {
+        font-size: 1rem;
+        text-align: center;
+        cursor: pointer;
+        text-align: center;
+        width: 90%; 
+        margin-left: 5%;
+        margin-right: 5%;  
+        padding-top: 10px;
+        padding-bottom: 10px; 
+        box-sizing: border-box; 
+        min-height: 12vh;
+    }
+ 
+
+    .mainContainer {
+        margin-top: 10px; 
+        margin-bottom: 10px; 
+        display: flex; 
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        justify-content: space-between;
+    }
+
+    /* defaults for all containers within .maincontainer */
+
+    .container { 
+        box-sizing: border-box;
+        width: 90%; 
+        margin: 5%; 
+        padding: 20px;
+        border: solid var(--mountainFog) 3px; 
+        box-shadow: 3px 3px #001d08;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+
+     /* loop e to m example image on click */
+    .flashcardExpContainer {
+        align-content: center;
+    }
+        .flashcardImg {
+            max-width: 70vw;
+        }
+
+
+    .locationDiv {
+        align-content: center;
+        align-items: center;
+        justify-content: space-around; 
+    }
+        .locationImg {
+            max-width: 60vw;
+            padding: 10px; 
+        }
+
+
+    .mapDiv {
+        align-self: center;
+    }
+        #keralaMap {
+            max-height: 45vh;
+            max-width: 100%;
+            box-shadow: 3px 3px var(--keralaShade);
+        }
+
+
+    .worldClock {
+        align-items: start;
+    }
+
+    .footer {
+        margin: 20px; 
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    @media only screen and (min-width: 700px) {
+
+    .header {
+        min-height: 15vh; 
+    }
+  
+
+    .mainContainer {
+        display: grid;
+        grid-template-areas: 
+        "flashcardExp mapDiv" 
+        "locationDiv worldClock"
+        ;
+        grid-template-columns: 50vw 50vw;
+        grid-template-rows: auto auto; 
+    }
+
+    /* default setting for containers within main for large screens */
+
+    .container {
+        height: 90%; 
+    }
+
+        .flashcardExpContainer {
+            grid-area: flashcardExp;
+        }
+            .flashcardImg {
+                max-width: 30vw;
+            }
+
+        .locationDiv {
+            grid-area: locationDiv; 
+        }
+            .locationImg {
+                max-width: 30vw;
+            }
+
+        .mapDiv {
+            grid-area: mapDiv;
+        }  
+
+        .worldClock {
+            grid-area: worldClock;
+        }
+
+    }
