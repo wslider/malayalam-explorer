@@ -105,10 +105,9 @@ Educational app for Malayali diaspora and Travelers seeking to explore Kerala's 
             }
         - npm install cors
         - npm install body parser
-    4. index.html & flashcards.html 
-        - basic structure for features
-    5. style.css - css for index.html & flashcards.css - css for flashcards.html 
-        - initial structure and styling for MVP pages
+    4. Structure and styling for MVP pages - index.html and flashcards.html
+    5. Created script.js variables, functions and event listeners for index.html features - world clock: Local Time & IST with bilingual greetings.
+
     5. Set up flashcard data in JSON - initial 10 - 50 cards for testing
         - Add flashcards.json with initial Malayalam-English array/objects; include client-side load script.
     6. script JS and flashcards.js
