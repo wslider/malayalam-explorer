@@ -59,7 +59,7 @@ Educational app for Malayali diaspora and Travelers seeking to explore Kerala's 
     npm start
     ```
 
-5. **Open Browser & Navigate to `http://localhost/3002`**
+5. **Open Browser & Navigate to `http://localhost/3005`**
     - ! IMPORTANT: Do not use live server to view the UI. The server writes to a JSON file (flashcards.json) that live server is watching and it will refresh the page on a POST or DELETE request (creating new flashacards and deleting flashcards). 
 
  
@@ -108,13 +108,13 @@ Educational app for Malayali diaspora and Travelers seeking to explore Kerala's 
     4. Structure and styling for MVP pages - index.html and flashcards.html
     5. Created script.js variables, functions and event listeners for index.html features - world clock: Local Time & IST with bilingual greetings.
     6. Set up flashcard data in JSON - initial 10 - 50 cards for testing API and flashcard functionality. 
-    7.Add custom CRD API endpoint and Express routes for GET, POST, and DELETE. - server.js
-        - npm run dev & test
-         
-    7. Add flashcard navigation controls - flashcards.js 
+    7. Add custom CRD API endpoint and Express routes for GET, POST, and DELETE. - server.js
+    8. Add flashcard navigation controls - flashcards.js 
         - Implement Next/Previous/Skip buttons and “click” to Flip with event listeners and array indexing.
         - Integrate shuffle mode for flashcards
         - Add shuffle() function, button toggle, and state to randomize deck order.
+        - npm start and test `http://localhost/3005`
+
     8. Create bilingual world clock on Index.html 
         - Add JS for local/IST time display, setInterval updates, time-of-day greetings, and hover / toggle.
     9. Polish CSS and Fine Tune Media Queries 
