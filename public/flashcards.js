@@ -74,6 +74,25 @@ engCard.addEventListener('click', () => {
     displayCard();  // Refresh content AFTER swap
 });
 
+//Change background color on card to highlight interactivity
+
+engCard.addEventListener('mouseover', ()=>{
+    engCard.style.backgroundColor = "#00aa00"; 
+});
+
+engCard.addEventListener('mouseleave', ()=>{
+    engCard.style.backgroundColor = ''; 
+});
+
+malCard.addEventListener('mouseover', ()=> {
+    malCard.style.backgroundColor = "#00aa00"; 
+});
+
+malCard.addEventListener('mouseleave', () => {
+    malCard.style.backgroundColor = '';
+});
+
+
 // Add click listener to Malayalam side for flip-back
 malCard.addEventListener('click', () => {
     console.log('Malayalam clicked! Flipping back');

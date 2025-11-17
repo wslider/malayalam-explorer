@@ -2,7 +2,7 @@
       --keralaGreen: #004700; 
       --keralaNight: #000d08;
       --keralaShade: #001d08;
-      --munnarTeaGarden: #00b100;
+      --munnarTeaGarden: #00aa00;
       --ripeMango: #ff6600; 
       --mountainFog: #f0fff8; 
       --monsoonCloud: #333849;
@@ -52,10 +52,6 @@
       box-sizing: border-box;
       text-align: center;
       cursor: pointer;
-    }
-
-    .cardContainer:hover {
-      background-color: solid var(--munnarTeaGarden);
     }
 
     .cardItem {

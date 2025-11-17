@@ -114,12 +114,10 @@ Educational app for Malayali diaspora and Travelers seeking to explore Kerala's 
         - Integrate shuffle mode for flashcards
         - Add shuffle() function, button toggle, and state to randomize deck order.
         - npm start and test `http://localhost/3005`
-
-    8. Create bilingual world clock on Index.html 
-        - Add JS for local/IST time display, setInterval updates, time-of-day greetings, and hover / toggle.
-    9. Polish CSS and Fine Tune Media Queries 
-    10. Add additional Flashcards.  
+    9. Add additional flashcard data to flashcards.json - total count of 320. 
+    10. Polish CSS and Fine Tune Media Queries.   
     11. ... add additional stretch goals (commit each new feature). 
+
 
 ## Future Plans and Upcoming Versions:
     1. Continue to develop and expand advanced features.
