@@ -91,21 +91,20 @@ Educational app for Malayali diaspora and Travelers seeking to explore Kerala's 
 
 ## 10 Distinct commits
     1. ReadME and Project Proposal + Create Repository
-    2. Site Organization - created files, folders (incling gitignore) 
-    3. API 
+    2. Site Organization - created files, folders (including .gitignore) 
+    3. API setup  + create package.json - install express, nodemon & dependencies 
         - npm init -y
-        - npm npm install express
+        - npm install express
         - npm install --save-dev nodemon
-        - setup express server in index.js 
+        - setup express server in server.js 
         - update package.json 
             -"scripts": {
-                "start": "node index.js",
-                "dev": "nodemon index.js" }
-        - npm run dev
-        - Use Postman to visit http://localhost:3002 & http://localhost:3002/api. You should see the responses defined in index.js
-        - gitignore file 
-            - node_modules/
-            - .env
+                "test": "echo \"Error: no test specified\" && exit 1",
+                "start": "node server.js",
+                "dev": "nodemon server.js"
+            }
+        - npm install cors
+        - npm install body parser
     4. index.html & flashcards.html
         - basic structure for features
     5. Set up flashcard data in JSON - initial 10 - 50 cards for testing
@@ -114,6 +113,7 @@ Educational app for Malayali diaspora and Travelers seeking to explore Kerala's 
         - Add Express routes for GET/POST /api/flashcards with fs module for JSON persistence.
         - Build flashcard display component
         - Add script.js logic to fetch/render cards via API, with flip animation and error fallback.
+        - npm run dev 
     7. Add flashcard navigation controls
         - Implement Next/Previous/Skip buttons and “click” to Flip with event listeners and array indexing.
         - Integrate shuffle mode for flashcards
@@ -127,11 +127,14 @@ Educational app for Malayali diaspora and Travelers seeking to explore Kerala's 
 ## Future Plans and Upcoming Versions:
     1. Continue to develop and expand advanced features.
     - add playable audio for cards
-    - add locations  
+    - add flashcard search 
+    - add location pages 
+    - mark flashcards for review and save progress on deck locally
+    - use tracking and achievment badges  
     2. Public version on GitHub pages 
 
 
-
+ 
 # Site Map
 
 - **server.js**
