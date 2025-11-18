@@ -78,6 +78,11 @@
         flex-direction: column;
         gap: 5px;
     }
+
+    .containerTitle {
+        align-self: center;
+    }
+
     .containerImg {
         align-self: center;
     }
@@ -149,7 +154,7 @@
         grid-template-rows: auto auto; 
     }
 
-    /* default setting for containers within main for large screens */
+    /* default setting for containers within main for tablets and large screens */
 
     .container {
         height: 90%; 
@@ -181,9 +186,10 @@
 
     @media only screen and (min-width: 992px) {
         .worldClock {
-            justify-content: space-around; 
+            justify-content: center; 
             align-items: center;
             font-size: 1.25rem;
+            padding: 10%; 
         }
 
     }
