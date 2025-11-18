@@ -78,6 +78,16 @@
         flex-direction: column;
         gap: 5px;
     }
+    .containerImg {
+        align-self: center;
+    }
+
+    .figure {
+        display: flex; 
+        flex-direction: column;
+        align-items: center;
+        gap: 10px; 
+    }
 
 
      /* loop e to m example image on click */
@@ -86,6 +96,7 @@
     }
         .flashcardImg {
             max-width: 70vw;
+            cursor: pointer; 
         }
 
 
@@ -107,6 +118,7 @@
             max-height: 45vh;
             max-width: 100%;
             box-shadow: 3px 3px var(--keralaShade);
+            cursor: pointer; 
         }
 
 
@@ -120,7 +132,7 @@
         text-align: center;
     }
 
-    @media only screen and (min-width: 700px) {
+    @media only screen and (min-width: 768px) {
 
     .header {
         min-height: 15vh; 
@@ -163,6 +175,15 @@
 
         .worldClock {
             grid-area: worldClock;
+        }
+
+    }
+
+    @media only screen and (min-width: 992px) {
+        .worldClock {
+            justify-content: space-around; 
+            align-items: center;
+            font-size: 1.25rem;
         }
 
     }
