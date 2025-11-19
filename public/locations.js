@@ -1,0 +1,1 @@
+/* create a locations array with images and wx data info */ 

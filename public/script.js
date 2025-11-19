@@ -135,12 +135,46 @@ function updateGreetings() {
 }
 
 updateGreetings();
-
-// Update every second
 setInterval(updateGreetings, 60000);
 
+//update featured location example figure every 10 seconds 
 
+const locations = [
+    {
+        imgSrc: "images/varkala-beach-path.jpg",
+        alt: "Varkala Beach in Kerala, India",
+        caption: "Varkala Beach, Kerala, India",
+        lat: 8.673,
+        lon: 76.816
+    },
+    {
+        imgSrc: "images/vembanad-lake-monsoon-clouds.jpeg",
+        alt: "Houseboats on Vembanad Lake in Kerala, India",
+        caption: "Vembanad Lake, Kerala, India",
+        lat: 9.582,
+        lon: 76.404
+    }
+];
 
+const locationFig = document.getElementById('locationFig');
+let currentIndex = 0;
 
+function updateLocationFigure() {
+    const location = locations[currentIndex];
 
-//add romanized script on mouseover 
+    const osmLink = `https://www.openstreetmap.org/?mlat=${location.lat}&mlon=${location.lon}#map=12/${location.lat}/${location.lon}`;
+
+    locationFig.innerHTML = `
+        <a href="${osmLink}" target="_blank">
+            <img class="locationImg" src="${location.imgSrc}" alt="${location.alt}">
+        </a>
+        <figcaption>${location.caption}</figcaption>
+    `;
+
+    currentIndex = (currentIndex + 1) % locations.length;
+
+}
+
+updateLocationFigure(); 
+setInterval(updateLocationFigure, 10000);
+
