@@ -252,3 +252,4 @@ loadFlashcards();
 isFlipped = false;
 engCard.style.display = 'block';
 malCard.style.display = 'none';
+

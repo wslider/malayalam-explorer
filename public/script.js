@@ -144,15 +144,15 @@ const locations = [
         imgSrc: "images/varkala-beach-path.jpg",
         alt: "Varkala Beach in Kerala, India",
         caption: "Varkala Beach, Kerala, India",
-        lat: 8.673,
-        lon: 76.816
+        lat: 8.7333,
+        lon: 76.7040
     },
     {
         imgSrc: "images/vembanad-lake-monsoon-clouds.jpeg",
         alt: "Houseboats on Vembanad Lake in Kerala, India",
         caption: "Vembanad Lake, Kerala, India",
-        lat: 9.582,
-        lon: 76.404
+        lat: 9.9736,
+        lon: 76.2581
     }
 ];
 
@@ -189,3 +189,4 @@ function updateFooter () {
 
 updateFooter(); 
 setInterval(updateFooter, 360000);
+
