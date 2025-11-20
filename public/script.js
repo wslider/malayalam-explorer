@@ -152,8 +152,8 @@ const locations = [
         imgSrc: "images/vembanad-lake-monsoon-clouds.jpeg",
         alt: "Houseboats on Vembanad Lake in Kerala, India",
         caption: "Vembanad Lake, Kerala, India",
-        lat: 9.9736,
-        lon: 76.2581
+        lat: 9.5977,
+        lon: 76.3996
     }
 ];
 
@@ -163,7 +163,7 @@ let currentIndex = 0;
 function updateLocationFigure() {
     const location = locations[currentIndex];
 
-    const osmLink = `https://www.openstreetmap.org/?mlat=${location.lat}&mlon=${location.lon}#map=12/${location.lat}/${location.lon}`;
+    const osmLink = `https://www.openstreetmap.org/?mlat=${location.lat}&mlon=${location.lon}#map=8/${location.lat}/${location.lon}`;
 
     locationFig.innerHTML = `
         <a href="${osmLink}" target="_blank">
