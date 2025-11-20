@@ -208,22 +208,24 @@ document.getElementById('newCardForm').addEventListener('submit', async (e) => {
     };
 
     
-    // Basic validation + Matches if first char Malayalam inputs is in Malayalam unicode range
-    const malayalamRegex = /[\u0D00-\u0D7F]/;   
+    // Basic validation + Matches if all characters in Malayalam inputs are in Malayalam unicode range
+    // Includes Malayalam numerals 
+    // Allows spaces and common punctuations 
+    const malayalamRegex = /^[\u0D00-\u0D7F\u0D66-\u0D78\s\u200C-\u200D.,!?'"“”()-]+$/u;   
 
     if (!newCard.category || !newCard.english || !newCard.malayalam) {
         alert('Please fill required fields: Category, English, Malayalam');
         return;
     }
 
-    // Check if first letter of Malayalam word (not translit) is in Malayalam Script
-    if (!malayalamRegex.test(newCard.malayalam.charAt(0))) {
-        alert('Malayalam word must start with a valid Malayalam script character');
+    // Check if all letters of Malayalam word (not translit) are in Malayalam Script
+    if (!malayalamRegex.test(newCard.malayalam)) {
+        alert('Malayalam word must be in valid Malayalam script');
         return; 
     }
-    //check if first letter of malayalam example phrase (not translit) is in Malayalam Script (skip if empty)
-    if (newCard.malExample && !malayalamRegex.test(newCard.malExample.charAt(0))) {  
-        alert('Malayalam example must start with a valid Malayalam script character');
+    //check if all letters of malayalam example phrase (not translit) are in Malayalam Script (skip if empty)
+    if (newCard.malExample && !malayalamRegex.test(newCard.malExample)) {  
+        alert(`Malayalam example be in valid Malayalam script (common puntuations allowed: ", !, ?)`);
         return; 
     }
 

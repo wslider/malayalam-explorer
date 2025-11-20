@@ -1,11 +1,12 @@
 // Event Listener for Bilingual Header 
 
 document.getElementById("infoGreetingText").addEventListener("mouseout", function() {
-  this.textContent = `Learn Malayalam ... The Language of Kerala`
+  this.textContent = `Learn Malayalam ... Explore Kerala`
 });
 
 document.getElementById("infoGreetingText").addEventListener("mouseover", function() {
-  this.textContent = `മലയാളം പഠിക്കൂ ... കേരളത്തിന്റെ ഭാഷ  (malayalam padikku... keralathinte bhasha)`
+  this.textContent = `മലയാളം പഠിക്കൂ .. കേരളം അടുത്തറിയൂ
+(malayalam padikku .. keralam aduthariyoo)`
 });
 
 

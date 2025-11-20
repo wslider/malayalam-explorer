@@ -30,7 +30,9 @@
     background-color: var(--keralaNight);
     display: flex; 
     justify-content: center;
-    padding: 20px; 
+    align-items: center; 
+    padding: 10px; 
+    box-sizing: border-box;
     }
 
         .topNav > a {
