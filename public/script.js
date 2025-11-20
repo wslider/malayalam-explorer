@@ -6,7 +6,7 @@ document.getElementById("infoGreetingText").addEventListener("mouseout", functio
 
 document.getElementById("infoGreetingText").addEventListener("mouseover", function() {
   this.textContent = `മലയാളം പഠിക്കൂ .. കേരളം അടുത്തറിയൂ
-(malayalam padikku .. keralam aduthariyoo)`
+(Malayalam padikku .. Keralam aduthariyoo)`
 });
 
 
