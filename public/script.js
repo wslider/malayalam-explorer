@@ -178,3 +178,14 @@ function updateLocationFigure() {
 updateLocationFigure(); 
 setInterval(updateLocationFigure, 10000);
 
+// export to other js files
+
+function updateFooter () {
+    const footer = document.getElementById('footer');
+    const now = new Date();
+    const footerYear = now.getFullYear(); 
+    footer.textContent= `Malayalam Explorer - ${footerYear}`;
+}
+
+updateFooter(); 
+setInterval(updateFooter, 360000);
