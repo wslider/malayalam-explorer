@@ -3,9 +3,12 @@ const locationName = document.getElementById('locationName');
     const currentTempText = document.getElementById('currentTemp');
     const timeText = document.getElementById('time');
 
+    const locationImg = document.getElementById('locationImg');
+    const locationDesc = document.getElementById('locationDesc'); 
+
     const locations = [
-      { name: "Munnar", lat: "10.09", lon: "77.06" },
-      { name: "Thiruvananthapuram", lat: "8.52", lon: "76.94" }
+      { name: "Munnar", lat: "10.09", lon: "77.06", src:"images/munnar-hillstation.jpg" },
+      { name: "Thiruvananthapuram", lat: "8.52", lon: "76.94", src:"images/trivandrum-nairMuseum.jpg" }
     ];
 
     let i = 0;
@@ -26,6 +29,8 @@ const locationName = document.getElementById('locationName');
         currentTempText.textContent = `${temp}°F`;
         timeText.textContent = `as of ${time} IST`;
 
+        locationImg.src = `${loc.src}`;
+
       } catch (err) {
         currentTempText.textContent = "Error";
       }
@@ -35,3 +40,8 @@ const locationName = document.getElementById('locationName');
 
     updateWeather();
     setInterval(updateWeather, 60000);
+
+
+// pin on map location (add to array)
+// location image for each location 
+// insp for locations on profile site 

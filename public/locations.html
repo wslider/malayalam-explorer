@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css"> 
+    <link rel="stylesheet" href="css/locations.css"> 
     <title>Locations</title>
 </head>
 <body>
@@ -15,9 +15,16 @@
 
     <main class="mainContainer">
         <div class="card container">
-            <h1 id="locationName">Loading…</h1>
+            <h2 id="locationName">Loading…</h1>
             <div id="currentTemp">--°F</div>
             <div id="time"></div>
+            <img id="locationImg">
+            <div id="locationDec"></div>
+        </div>
+        <div class="map container">
+            <a href="https://www.openstreetmap.org/?mlat=8.673&mlon=76.816#map=7/8.673/76.816&layers=P" target="_blank">
+                <img class="map" src="images/kerala-map-square.png"> 
+            </a>
         </div>
     </main>
     
