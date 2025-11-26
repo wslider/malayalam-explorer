@@ -154,6 +154,13 @@ const locations = [
         caption: "Vembanad Lake, Kerala, India",
         lat: 9.5977,
         lon: 76.3996
+    },
+    {
+        imgSrc: "images/munnar-hillstation.jpg",
+        alt: "View of Anamudi - near Munnar, Kerala, India",
+        caption: "View of Anamudi (elev. 8,842 feet) near Munnar, Kerala, India",
+        lat: 10.1693,
+        lon: 77.0610
     }
 ];
 

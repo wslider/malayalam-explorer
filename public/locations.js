@@ -7,8 +7,8 @@ const locationName = document.getElementById('locationName');
     const locationDesc = document.getElementById('locationDesc'); 
 
     const locations = [
-      { name: "Munnar", lat: "10.09", lon: "77.06", src:"images/munnar-hillstation.jpg" },
-      { name: "Thiruvananthapuram", lat: "8.52", lon: "76.94", src:"images/trivandrum-nairMuseum.jpg" }
+      { name: "Munnar", lat: "10.09", lon: "77.06", src:"images/munnar-hillstation.jpg"},
+      { name: "Thiruvananthapuram", lat: "8.52", lon: "76.94", src:"images/trivandrum-nairMuseum.jpg"}
     ];
 
     let i = 0;
@@ -31,7 +31,10 @@ const locationName = document.getElementById('locationName');
 
         locationImg.src = `${loc.src}`;
 
-      } catch (err) {
+        
+      } 
+      
+      catch (err) {
         currentTempText.textContent = "Error";
       }
 
@@ -45,3 +48,18 @@ const locationName = document.getElementById('locationName');
 // pin on map location (add to array)
 // location image for each location 
 // insp for locations on profile site 
+
+/* 
+
+     const locations = [
+      { name: "Munnar", lat: "10.09", lon: "77.06", src:"images/munnar-hillstation.jpg", engDesc:"", malDesc:"" },
+      { name: "Thiruvananthapuram", lat: "8.52", lon: "76.94", src:"images/trivandrum-nairMuseum.jpg", engDesc:"", malDesc:"" }
+    ];
+
+        locationDesc.addEventListener("mouseout", function() {
+          this.textContent = `${loc.engDesc}`
+        });                             
+
+        locationDesc.addEventListener("mouseover", function() {
+          this.textContent = `${loc.malDesc}`
+        }); */ 
