@@ -19,10 +19,10 @@ app.use(express.static('public'));
 
 //Routes for CRD API
 
-app.get('/api/flashcards', (req, res) => {}); // GET all
-app.get('/api/flashcards/:id', (req, res) => {}); // GET one
-app.post('/api/flashcards', (req , res) => {}); // POST 
-app.delete('/api/flashcards/:id', (req, res) => {}); // DELETE 
+app.get('api/flashcards', (req, res) => {}); // GET all
+app.get('api/flashcards/:id', (req, res) => {}); // GET one
+app.post('api/flashcards', (req , res) => {}); // POST 
+app.delete('api/flashcards/:id', (req, res) => {}); // DELETE 
 
 //start server
 
