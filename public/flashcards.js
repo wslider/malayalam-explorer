@@ -7,10 +7,12 @@ let isShuffled = false;
 const engCard = document.getElementById('engCardContent');
 const malCard = document.getElementById('malCardContent');
 
+const API_BASE = window.location.origin; 
+
 // Load data (API first, fallback to local JSON)
 async function loadFlashcards() {
     try {
-        const response = await fetch('http://localhost:3005/api/flashcards'); // add in localhost and port
+        const response = await fetch(`${API_BASE}/api/flashcards`); // add in localhost and port
         if (!response.ok) throw new Error('API fetch failed');
         flashcards = await response.json(); 
     } catch (err) {
@@ -162,7 +164,7 @@ document.getElementById('deleteButton').addEventListener('click', async () => {
     try {
         let response = { ok: true };  //Default "success" for local-only
         if (card.id) {
-            response = await fetch(`/api/flashcards/${card.id}`, {
+            response = await fetch(`${API_BASE}/api/flashcards/${card.id}`, { 
                 method: 'DELETE',
             });
             if (!response.ok) {  // Now safe: Always defined
@@ -231,7 +233,7 @@ document.getElementById('newCardForm').addEventListener('submit', async (e) => {
 
 
     try {
-        const response = await fetch('/api/flashcards', {
+        const response = await fetch(`${API_BASE}/api/flashcards`, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(newCard)
