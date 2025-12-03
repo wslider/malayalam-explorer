@@ -23,7 +23,7 @@ async function loadFlashcards() {
             flashcards = await localData.json(); 
         } catch (localErr) {
             console.error('Local load failed:', localErr);
-            flashcards = [];  // Fallback to empty
+            flashcards = [];  // Fallback to Empty
         }
     }
     if (flashcards.length > 0) {
