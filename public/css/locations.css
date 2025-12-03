@@ -91,10 +91,15 @@ body {
         align-self: center;
     }
 
-    a, .map {
+    .mapContainer {
       align-self: center;
-      max-width: 100%;
+      width: 100%; 
     }
+
+    .mapImage {
+    width: 100%;                                    
+    height: auto;                  
+    aspect-ratio: 5 / 4; }
 
   .footer {
         margin: 20px; 
@@ -113,21 +118,12 @@ body {
     display: flex; 
     flex-direction: row;
     max-width: 100vw;
-
   }
 
-  .container {
-    max-width: 40vw;
-    height: 60vh; 
-  }
 
 }
 
 @media only screen and (min-width: 992px) {
-
-  .container {
-    height: 70vh; 
-  }
 
 
 }

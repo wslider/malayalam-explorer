@@ -6,6 +6,8 @@ const locationName = document.getElementById('locationName');
     const locationImg = document.getElementById('locationImg');
     const locationDesc = document.getElementById('locationDesc'); 
 
+    const locationMap = document.getElementById('locationMap'); 
+
     const locations = [
       { name: "Munnar", lat: "10.09", lon: "77.06", src:"images/munnar-hillstation.jpg"},
       { name: "Thiruvananthapuram", lat: "8.52", lon: "76.94", src:"images/trivandrum-nairMuseum.jpg"}
@@ -13,7 +15,7 @@ const locationName = document.getElementById('locationName');
 
     let i = 0;
 
-    async function updateWeather() {
+    async function updateLocation() {
       const loc = locations[i];
 
       const url = `https://api.open-meteo.com/v1/forecast?latitude=${loc.lat}&longitude=${loc.lon}&current=temperature_2m&temperature_unit=fahrenheit&timezone=Asia%2FKolkata`;
@@ -31,6 +33,13 @@ const locationName = document.getElementById('locationName');
 
         locationImg.src = `${loc.src}`;
 
+        locationMap.innerHTML = `
+        <iframe class="mapImage" src="https://www.openstreetmap.org/export/embed.html?bbox=73.53698730468751%2C7.988511967656373%2C80.60119628906251%2C12.157480388484009&amp;layer=mapnik&amp;marker=${loc.lat}%2C${loc.lon}" style="border: 1px solid black">
+        </iframe><br/>
+        <small>
+        <a href="https://www.openstreetmap.org/?mlat=${loc.lat}&amp;mlon=${loc.lon}#map=8/${loc.lat}/${loc.lon}">View Larger Map</a>
+        </small>`
+
         
       } 
       
@@ -41,8 +50,8 @@ const locationName = document.getElementById('locationName');
       i = (i + 1) % locations.length; // loop though continously 
     }
 
-    updateWeather();
-    setInterval(updateWeather, 60000);
+    updateLocation();
+    setInterval(updateLocation, 60000);
 
 
 // pin on map location (add to array)
