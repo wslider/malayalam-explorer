@@ -1,3 +1,4 @@
+import { updateFooter } from './utils.js';
 
 const locationName = document.getElementById('locationName');
     const currentTempText = document.getElementById('currentTemp');
@@ -52,6 +53,8 @@ const locationName = document.getElementById('locationName');
 
     updateLocation();
     setInterval(updateLocation, 60000);
+
+    updateFooter();
 
 
 // pin on map location (add to array)

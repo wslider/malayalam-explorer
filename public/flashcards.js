@@ -1,3 +1,5 @@
+import { updateFooter } from './utils.js';
+
 let flashcards = []; // Global array of cards
 let currentIndex = 0;
 let isFlipped = false; 
@@ -257,3 +259,6 @@ isFlipped = false;
 engCard.style.display = 'block';
 malCard.style.display = 'none';
 
+
+
+updateFooter(); 

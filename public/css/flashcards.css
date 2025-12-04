@@ -105,6 +105,11 @@
         box-shadow: 5px 5px var(--keralaShade); 
       }
 
+      .footer {
+        margin: 20px; 
+        box-sizing: border-box;
+        text-align: center;
+      }
   /* Tablet & Larger */
 
   @media only screen and (min-width: 768px) {
