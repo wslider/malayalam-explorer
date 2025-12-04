@@ -34,7 +34,7 @@ const locationName = document.getElementById('locationName');
         locationImg.src = `${loc.src}`;
 
         locationMap.innerHTML = `
-        <iframe class="mapImage" src="https://www.openstreetmap.org/export/embed.html?bbox=73.53698730468751%2C7.988511967656373%2C80.60119628906251%2C12.157480388484009&amp;layer=mapnik&amp;marker=${loc.lat}%2C${loc.lon}" style="border: 1px solid black">
+        <iframe class="mapImage image" src="https://www.openstreetmap.org/export/embed.html?bbox=73.53698730468751%2C7.988511967656373%2C80.60119628906251%2C12.157480388484009&amp;layer=mapnik&amp;marker=${loc.lat}%2C${loc.lon}" style="border: 1px solid black">
         </iframe><br/>
         <small>
         <a href="https://www.openstreetmap.org/?mlat=${loc.lat}&amp;mlon=${loc.lon}#map=8/${loc.lat}/${loc.lon}">View Larger Map</a>
