@@ -1,4 +1,5 @@
 import { updateFooter } from './utils.js';
+import { navBarLinks } from './utils.js';
 
 // Event Listener for Bilingual Header 
 
@@ -10,6 +11,8 @@ document.getElementById("infoGreetingText").addEventListener("mouseover", functi
   this.textContent = `മലയാളം പഠിക്കൂ .. കേരളം അടുത്തറിയൂ
 (Malayalam padikku .. Keralam aduthariyoo)`
 });
+
+document.getElementById('dropMenu').addEventListener('click', navBarLinks); 
 
 
 // Global variables for shared logic of Greetings
@@ -188,4 +191,8 @@ function updateLocationFigure() {
 updateLocationFigure(); 
 setInterval(updateLocationFigure, 10000);
 
+
+
 updateFooter(); 
+
+

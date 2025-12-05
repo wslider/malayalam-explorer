@@ -20,4 +20,26 @@ if (document.readyState === 'loading') {
     setInterval(updateFooter, 36000000);
 }
 
-//make est. Two Thousand Twenty Five ? 
+
+
+export function navBarLinks() {
+    const myLinks = document.getElementById("myLinks");
+    const currentDisplay = window.getComputedStyle(myLinks).display;
+    const topNavBar = document.getElementById('topNavBar'); 
+
+    if (currentDisplay === "block" || currentDisplay === "flex") {
+        myLinks.style.display = "none";
+    } else if (window.innerWidth < 768) {
+        myLinks.style.display = "block";
+    } else {
+        myLinks.style.display = "flex";
+        myLinks.style.flexDirection = "row";
+        myLinks.style.justifyContent = "space-evenly"
+        myLinks.style.gap = "2vw"
+        topNavBar.style.display = "flex"; 
+        topNavBar.style.flexDirection = "row"; 
+        topNavBar.style.justifyContent = "flex-start";
+        topNavBar.style.gap = "5vw"; 
+        topNavBar.style.padding = "0 3vw 0 -1vw";
+    }
+}
