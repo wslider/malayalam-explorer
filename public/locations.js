@@ -1,4 +1,7 @@
 import { updateFooter } from './utils.js';
+import { navBarLinks } from './utils.js';
+
+document.getElementById('dropMenu').addEventListener('click', navBarLinks); 
 
 const locationName = document.getElementById('locationName');
     const currentTempText = document.getElementById('currentTemp');

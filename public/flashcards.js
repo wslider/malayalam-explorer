@@ -1,4 +1,7 @@
 import { updateFooter } from './utils.js';
+import { navBarLinks } from './utils.js';
+
+document.getElementById('dropMenu').addEventListener('click', navBarLinks); 
 
 let flashcards = []; // Global array of cards
 let currentIndex = 0;

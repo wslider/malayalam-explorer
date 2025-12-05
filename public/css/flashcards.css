@@ -22,26 +22,48 @@
         margin: 0; 
     }
 
-    /* add a nav bar */
-.topNav {
-  height:fit-content; 
-  background-color: var(--keralaNight);
-  display: flex; 
-  flex-direction: column;
-  justify-content: space-evenly;
-  width: 100%; 
-  min-height: 7vh; 
-  box-sizing: border-box;  
-  align-items: center; 
-}
+/* Navigation menu */
+    .topnav {
+        grid-area: navBar;
+        overflow: hidden;
+        background-color: var(--keralaNight);
+        width: 100%;
+    }
 
-.topNav > a {
-  color: var(--mountainFog); 
-  font-size: 2rem;
-  font-weight: 500;
-  text-align: center;
-  
-}
+        .topnav #myLinks {
+            display: none; /* Hidden by default */
+            flex-direction: column; 
+        }
+
+        .topnav a {
+            color: var(--mountainFog);
+            padding: 0.8rem; 
+            font-size: 1.5rem; 
+            display: block;
+            text-align: center;
+        }
+
+        .active {
+            background-color: var(--keralaNight);
+            font-weight: 600;
+            color: var(--mountainFog);
+        }
+
+        a {
+            text-decoration: none;
+            color: var(--mountainFog);
+        }
+
+        a:hover {
+            text-decoration: none;
+            font-weight: 700;
+            color: var(--ripeMango);
+        }
+
+        .hiddenContent {
+            display: none;
+        }
+
 
     .mainContainer {
       display: flex; 
