@@ -74,22 +74,52 @@
     }
 
     .cardContainer {
-      height: 50vh; 
+      min-height: 50vh; 
+      max-height: fit-content; 
       width: 95vw; 
-      margin: 10px;
-      border: 5px solid var(--mountainFog); 
+      margin-top: 3vh; 
+      border: 3px solid var(--mountainFog);
+      box-shadow: 5px 5px var(--keralaShade);
       box-sizing: border-box;
       text-align: center;
       cursor: pointer;
     }
 
+    .cardContainer#engCardContent {
+      padding-top: 7vh; 
+    }
+
+    .cardContainer#engCardContent *:nth-child(2) {
+      margin-top: 7vh;
+    }
+
+  
     .cardItem {
-      margin-top: 10px;
-      margin-bottom: 10px; 
+      margin-top: 20px;
+      margin-bottom: 20px; 
+      margin-left: 4vw; 
+      margin-right: 4vw;
+    }
+
+    .engCardItem {
+      font-size: 1.4rem;
+    }
+
+    .malCardItem {
+      font-size: 1.2rem;
     }
 
     .cardItem.top{
-      margin-top: 75px; 
+      margin-top: 40px; 
+    }
+
+    .cardItem#category {
+      font-size: 1rem; 
+    }
+
+    i.cardItem {
+      font-size: 0.9rem; 
+      margin-top: 20vh; 
     }
 
     .cardButtons {
@@ -104,9 +134,9 @@
       display: flex;
       flex-direction: column;
       justify-content: space-evenly;
-      gap: 5px; 
       width: 95vw;
-      border: solid var(--mountainFog) 5px;
+      border: solid var(--mountainFog) 3px; 
+      box-shadow: 5px 5px var(--keralaShade);
     }
 
       .cardButtons > button {
@@ -143,6 +173,20 @@
     .cardContainer {
       font-size: 1.4rem;
     }
+
+      .engCardItem {
+        font-size: 1.6rem;
+      }
+
+      .malCardItem {
+        font-size: 1.3rem;
+      }
+    
+    .cardContainer *:last-child{
+        margin-top: 7vh;
+        margin-bottom: 3vh; 
+      }
+
     .cardButtons {
       grid-area: cardButtons; 
       display: flex;
@@ -185,10 +229,13 @@
       grid-template-rows: auto auto;
       box-sizing: border-box;
       margin: 4vh;  
+
+      align-items: flex-start; /*fixes cascading style issue causeing containers to not be aligned properly*/
     }
     .cardContainer {
       grid-area: card;
-      height: 70vh;  
+      min-height: 70vh;
+      max-height: fit-content;
       max-width: 45vw;
       box-sizing: border-box;
       margin-right: 3.5vw;
@@ -196,8 +243,14 @@
       margin-bottom: 0;
       margin-left: 0; 
     }
+
+      .cardContainer#malCardContent *:nth-child(2){
+        margin-bottom: 7vh; /* gap between word and phrase on Malayalam side in desktop*/
+      } 
+
       .cardContainer *:last-child{
-        margin-top: 20%;
+        margin-top: 7vh;
+        margin-bottom: 3vh; 
       }
 
     .cardButtons {
@@ -221,6 +274,7 @@
       margin-left: 3.5vw; 
       box-sizing: border-box;
       font-size: 2rem;
+      margin-top: 0; 
     }
 
   }
