@@ -30,7 +30,10 @@ export function navBarLinks() {
     if (currentDisplay === "block" || currentDisplay === "flex") {
         myLinks.style.display = "none";
     } else if (window.innerWidth < 768) {
-        myLinks.style.display = "block";
+        myLinks.style.display = "flex";
+        myLinks.style.flexDirection = "column";
+        topNavBar.style.display = "flex";
+        topNavBar.style.flexDirection = "column"; 
     } else {
         myLinks.style.display = "flex";
         myLinks.style.flexDirection = "row";
