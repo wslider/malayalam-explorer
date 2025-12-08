@@ -128,6 +128,10 @@ body {
      flex-direction: row;
     }
 
+  .topnav > a {
+            text-align: left;
+        }
+
   .mainContainer {
     display: flex; 
     flex-direction: row;

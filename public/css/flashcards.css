@@ -170,6 +170,11 @@
         flex-direction: row;
       font-size: 1.5rem;
     }
+
+      .topnav > a {
+          text-align: left;
+      }
+    
     .cardContainer {
       font-size: 1.4rem;
     }

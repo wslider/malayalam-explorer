@@ -215,4 +215,8 @@
             padding: 10%; 
         }
 
+        .topnav > a {
+            text-align: left;
+        }
+
     }
