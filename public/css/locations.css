@@ -107,6 +107,10 @@ body {
         align-self: center;
     }
 
+    #locationName, #currentTemp, #time {
+      padding-left: 3vw; 
+    }
+
 
     .mapContainer {
       align-self: center;
