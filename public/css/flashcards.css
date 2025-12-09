@@ -32,7 +32,8 @@
 
         .topnav #myLinks {
             display: none; /* Hidden by default */
-            flex-direction: column; 
+            flex-direction: column;
+            background-color: var(--keralaShade);  
         }
 
         .topnav a {
