@@ -23,7 +23,7 @@ async function loadFlashcards() {
     } catch (err) {
         console.error('API load failed, using local:', err);
         try {
-            const localData = await fetch('/data/flashcards.json');
+            const localData = await fetch('./data/flashcards.json');
             if (!localData.ok) throw new Error('Local fetch failed');
             flashcards = await localData.json(); 
         } catch (localErr) {
