@@ -27,7 +27,7 @@ Educational app for Malayali diaspora and Travelers seeking to explore Kerala's 
 | Requirement | Implementation |
 |-------------|----------------|
 | **Responsive Design** | Mobile first design utilizing CSS flexbox. Media query and CSS grid layout optimized for tablets and larger screens. |
-| **Create a Node.js web server using Express.js** | Server.JS and Package.JSON files. Use Express and ES Modules.|
+| **Create a Node.js web server using Express.js** | Server.JS and Package.JSON files. Use Express and ES Modules. Express serves public/ directory. |
 | **Custom API** | Create a CRD API that implements HTTP requests for GET, POST (user can post their own flashcards to the data set) and DELETE. Data stored in a JSON on the backend (Flashcards.json).  |
 | **Use arrays, objects to store and retrieve information** |  Flashcard data stored in JSON Array of Objects with Shuffle mode, Previous, Next and Reset functionalities. |
 | **Display Data Based on Some External Factor**| Display Bilingual World Clock with Local and IST. Recalculate times every minute - Set Interval of 1000ms. |
@@ -56,6 +56,7 @@ Educational app for Malayali diaspora and Travelers seeking to explore Kerala's 
 4. **NPM Start**
     ```bash
     npm run dev
+        -or-
     npm start
     ```
 
@@ -80,6 +81,9 @@ Educational app for Malayali diaspora and Travelers seeking to explore Kerala's 
 
 ## Advanced Features: 
 - Expand Flashcard Data to include 300+ words and phrases
+- Locations Page with an Image, Map, Weather Conditions and Description for each featured location. 
+
+## Future Advanced Features: 
 - Add Playable Audio to Flashcards 
 - Featured Location Pages with Maps and Information 
     - Trivandrum
@@ -131,21 +135,22 @@ Educational app for Malayali diaspora and Travelers seeking to explore Kerala's 
 
  
 # Site Map
-
 - **server.js**
 - **package.json**
+- **package-lock.json**
+- **readme.md** 
 - **public/**
   - index.html
   - flashcards.html
-  - locations.html (advanced feature)
+  - locations.html
+  - script.js 
+  - flashcards.js
+  - locations.js 
+  - utils.js (functions to export)
   - **css/**
-    - reset.css
     - style.css
     - flashcards.css
-  - **js/**
-    - script.js
-    - flashcards.js
-    - locations.js (advanced feature)
+    - locations.css
   - **data/**
     - flashcards.json
   - **images/**
