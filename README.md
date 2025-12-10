@@ -139,8 +139,6 @@ Educational app for Malayali diaspora and Travelers seeking to explore Kerala's 
 - **package.json**
 - **package-lock.json**
 - **readme.md** 
-- **data/**
-    - flashcards.json
 - **public/**
   - index.html
   - flashcards.html
@@ -153,6 +151,8 @@ Educational app for Malayali diaspora and Travelers seeking to explore Kerala's 
     - style.css
     - flashcards.css
     - locations.css
+  - **data/**
+    - flashcards.json
   - **images/**
     - kerala-map.png
     - ... 
