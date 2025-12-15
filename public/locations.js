@@ -33,8 +33,7 @@ const locationName = document.getElementById('locationName');
         const time = data.current.time.slice(11, 16); 
 
         locationName.textContent = loc.name;
-        currentTempText.textContent = `${temp}°F`;
-        timeText.textContent = `as of ${time} IST`;
+        currentTempText.textContent = ` ${temp}°F as of ${time} IST`;
 
         locationImg.src = `${loc.src}`;
         locationImg.alt = `${loc.alt}`; 

@@ -94,21 +94,21 @@ body {
 
     .container { 
         box-sizing: border-box;
-        width: 85%; 
+        width: 93%; 
         margin: 5%; 
-        border: solid var(--mountainFog) 3px; 
-        box-shadow: 3px 3px #001d08;
+        background-color: var(--keralaShade);
         display: flex;
         flex-direction: column;
-        gap: 5px;
+        text-align: center;
     }
 
     .containerTitle {
         align-self: center;
     }
 
-    #locationName, #currentTemp, #time {
-      padding-left: 3vw; 
+   #currentTemp{
+      font-size: 1.3rem;
+      margin-bottom: 5vh; 
     }
 
 
@@ -121,10 +121,10 @@ body {
       aspect-ratio: 1 / 1; }
 
   .footer {
-        width: 100%; 
+        margin: 25px; 
         box-sizing: border-box;
         text-align: center;
-    }
+      }
 
 @media only screen and (min-width: 768px) {
 
@@ -152,7 +152,6 @@ body {
       border: none; 
       box-shadow: none;
       justify-content: flex-start;
-      padding-top: 5vh;
       align-self: baseline;
     }
 
@@ -167,5 +166,8 @@ body {
       align-self: flex-start;
     }
 
+    #locationMap {
+      background-color: var(--keralaGreen);
+    }
 
 }
