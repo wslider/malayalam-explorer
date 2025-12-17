@@ -159,7 +159,7 @@
       }
 
       .footer {
-        margin: 25px; 
+        margin: 20px; 
         box-sizing: border-box;
         text-align: center;
       }
@@ -221,9 +221,26 @@
       max-width: 100vw;
     }
 
-    .topNav {
-      min-height: 10vh; 
-    }
+        .topnav {
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-start;
+      }
+
+      .topnav #myLinks {
+          display: flex;
+          flex-direction: row;
+          background-color: transparent;
+      }
+
+      .topnav a {
+        margin-left: 5vw; 
+        margin-right: 12vw; 
+      }
+
+      #dropMenu {
+          display: none; 
+      }
 
     .mainContainer {
       display: grid; 

@@ -1,5 +1,6 @@
-import { updateFooter } from './utils.js';
 import { navBarLinks } from './utils.js';
+import { updateSunMapLink } from './utils.js';
+import { updateFooter } from './utils.js';
 
 // Event Listener for Bilingual Header 
 
@@ -96,7 +97,6 @@ function updateLocalTimeGreeting() {
 
 function updateKeralaTimeGreeting() {
   const now = new Date();
-  
   // Get Kerala/IST time components
   const options = {
     timeZone: 'Asia/Kolkata', // IST (UTC+5:30) for Kerala
@@ -190,9 +190,7 @@ function updateLocationFigure() {
 
 updateLocationFigure(); 
 setInterval(updateLocationFigure, 10000);
-
-
-
+updateSunMapLink(); 
 updateFooter(); 
 
 

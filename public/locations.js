@@ -1,5 +1,6 @@
-import { updateFooter } from './utils.js';
 import { navBarLinks } from './utils.js';
+import { updateSunMapLink } from './utils.js';
+import { updateFooter } from './utils.js';
 
 document.getElementById('dropMenu').addEventListener('click', navBarLinks); 
 
@@ -58,6 +59,7 @@ const locationName = document.getElementById('locationName');
     updateLocation();
     setInterval(updateLocation, 60000);
 
+    updateSunMapLink();
     updateFooter();
 
 

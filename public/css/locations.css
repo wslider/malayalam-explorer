@@ -120,6 +120,28 @@ body {
       height: auto;                  
       aspect-ratio: 1 / 1; }
 
+
+  .sunMapButtonContainer {
+      background-color: transparent; 
+      margin: 10px 5%;              
+      padding: 0;                   
+  }
+
+
+  .sunMapButton {
+      display: block; 
+      font-size: 1.5rem;
+      background-color: var(--backwaterBlue);
+      color: var(--mountainFog);
+      box-shadow: 3px 3px var(--keralaNight);
+      padding: 15px; 
+      border-radius: 15px;
+      border: none;                 
+      cursor: pointer;
+      width: fit-content;
+      margin: 0 auto;               
+  }
+
   .footer {
         margin: 25px; 
         box-sizing: border-box;
@@ -128,14 +150,26 @@ body {
 
 @media only screen and (min-width: 768px) {
 
-  .topNav {
-     display: flex; 
-     flex-direction: row;
+  .topnav {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
     }
 
-  .topnav > a {
-            text-align: left;
-        }
+    .topnav #myLinks {
+        display: flex;
+        flex-direction: row;
+        background-color: transparent;
+    }
+
+    .topnav a {
+      margin-left: 7vw; 
+      margin-right: 15vw; 
+    }
+
+    #dropMenu {
+        display: none; 
+    }
 
   .mainContainer {
     display: flex; 
@@ -153,6 +187,10 @@ body {
       box-shadow: none;
       justify-content: flex-start;
       align-self: baseline;
+    }
+
+    .sunMapButtonContainer, .sunMapButton {
+    display: none;
     }
 
     .image {
