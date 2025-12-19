@@ -127,7 +127,7 @@
     "malayalam": "നമ്പർ",
     "transliteration": "nambar",
     "malExample": "നിന്റെ നമ്പർ എന്താണ്?",
-    "malExampleTranslit": "(ninnte nambar entaanu?)"
+    "malExampleTranslit": "(ninte nambar entaanu?)"
   },
   {
     "id": 14,
@@ -637,7 +637,7 @@
     "malayalam": "പേര്",
     "transliteration": "peer",
     "malExample": "നിന്റെ പേര് എന്താണ്?",
-    "malExampleTranslit": "(ninnte peer entaanu?)"
+    "malExampleTranslit": "(ninte peer entaanu?)"
   },
   {
     "id": 65,
@@ -925,9 +925,9 @@
     "english": "Your (informal)",
     "engExample": "Your book is new.",
     "malayalam": "നിന്റെ",
-    "transliteration": "ninnte",
+    "transliteration": "ninte",
     "malExample": "നിന്റെ പുസ്തകം പുതിയതാണ്.",
-    "malExampleTranslit": "(ninnte pustakam puthiyathaanu.)"
+    "malExampleTranslit": "(ninte pustakam puthiyathaanu.)"
   },
   {
     "id": 94,
@@ -1497,7 +1497,7 @@
     "malayalam": "അറിയുന്നു",
     "transliteration": "ariyunnu",
     "malExample": "ഞാൻ നിന്റെ പേര് അറിയുന്നു.",
-    "malExampleTranslit": "(njaan ninnte peer ariyunnu.)"
+    "malExampleTranslit": "(njaan ninte peer ariyunnu.)"
   },
   {
     "id": 151,
@@ -2745,9 +2745,9 @@
     "english": "What is your name?",
     "engExample": "What is your name? I’m Anil.",
     "malayalam": "നിന്റെ പേര് എന്താണ്?",
-    "transliteration": "ninnte peer entaanu",
+    "transliteration": "ninte peer entaanu",
     "malExample": "നിന്റെ പേര് എന്താണ്? ഞാൻ അനിലാണ്.",
-    "malExampleTranslit": "(ninnte peer entaanu? njaan anilaanu.)"
+    "malExampleTranslit": "(ninte peer entaanu? njaan anilaanu.)"
   },
   {
     "id": 276,
