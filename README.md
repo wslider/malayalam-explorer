@@ -22,16 +22,20 @@ Educational app for Malayali diaspora and Travelers seeking to explore Kerala's 
 | **Kochi** | Featured location page for the port city including a map, weather data and information. (Advanced Feature)|
 
 
-## Capstone Requirements Fulfilled
+## Features for Capstone Requirements
 
 | Requirement | Implementation |
 |-------------|----------------|
-| **Responsive Design** | Mobile first design utilizing CSS flexbox. Media query and CSS grid layout optimized for tablets and larger screens. |
-| **Create a Node.js web server using Express.js** | Server.JS and Package.JSON files. Use Express and ES Modules. Express serves public/ directory. |
-| **Custom API** | Create a CRD API that implements HTTP requests for GET, POST (user can post their own flashcards to the data set) and DELETE. Data stored in a JSON on the backend (Flashcards.json).  |
-| **Use arrays, objects to store and retrieve information** |  Flashcard data stored in JSON Array of Objects with Shuffle mode, Previous, Next and Reset functionalities. |
+
+| **Analyze data that is stored in arrays, objects, sets or maps and display information about it in your app.** |  Flashcard data stored in JSON Array of Objects with Shuffle mode, Previous, Next and Reset functionalities. Images and data for featured locations in locations page relies on looping through an array. |
+
 | **Display Data Based on Some External Factor**| Display Bilingual World Clock with Local and IST. Recalculate times every minute - Set Interval of 1000ms. |
-|**Use a regular expression to validate user input**| Specific character requirements in form inputs for creating new cards and adding to the JSON file. Input validated before user can POST a new flashcard. Regex is used, especially where Malayalam script is required as input (see event listener for submitting a new card in flashcards.js). |
+
+|**Use a regular expression to validate user input and either prevent the invalid input or inform the user about it (in all cases prevent invalid input from being stored or saved).**| Specific character requirements in form inputs for creating new cards and adding to the JSON file. Input validated before user can POST a new flashcard. Regex is used, especially where Malayalam script is required as input (see event listener for submitting a new card in flashcards.js). |
+
+| **Create a Node.js web server using Express.js** | Server.JS and Package.JSON files. Use Express and ES Modules. Express serves public/ directory. |
+
+| **Create an API that implements HTTP requests for GET and POST. Data can be stored in a JSON file on the back-end** | API enables HTTP requests for GET, POST (user can post their own flashcards to the data set) and DELETE. Data stored in a JSON on the backend (Flashcards.json).  |
 
 
 
@@ -170,3 +174,15 @@ Educational app for Malayali diaspora and Travelers seeking to explore Kerala's 
 -  The function updateKeralaTimeGreeting() in script.js 
 -  Obtaining Initial List & Translations of Most Commonly Used Words and Example Phrases for flashcards - flashcards.json 
     - * Translations checked and verified by native Malayalam speakers
+
+
+
+Analyze data that is stored in arrays, objects, sets or maps and display information about it in your app.
+
+Use a regular expression to validate user input and either prevent the invalid input or inform the user about it (in all cases prevent invalid input from being stored or saved).
+
+Calculate and display data based on an external factor (ex: get the current date, and display how many days remaining until some event). 
+
+Create a node.js web server using Express.js.
+
+Create an API that implements HTTP requests for GET and POST. Data can be stored in a JSON file on the back-end
