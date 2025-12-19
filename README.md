@@ -170,14 +170,3 @@ Educational app for Malayali diaspora and Travelers seeking to explore Kerala's 
 -  Obtaining Initial List & Translations of Most Commonly Used Words and Example Phrases for flashcards - flashcards.json 
     - * Translations checked and verified by native Malayalam speakers
 
-
-
-Analyze data that is stored in arrays, objects, sets or maps and display information about it in your app.
-
-Use a regular expression to validate user input and either prevent the invalid input or inform the user about it (in all cases prevent invalid input from being stored or saved).
-
-Calculate and display data based on an external factor (ex: get the current date, and display how many days remaining until some event). 
-
-Create a node.js web server using Express.js.
-
-Create an API that implements HTTP requests for GET and POST. Data can be stored in a JSON file on the back-end
